@@ -76,3 +76,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 to start the server , run this command
 npx json-server --watch -p 3333 db.json
+
+project images can be found in issues section
