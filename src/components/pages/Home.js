@@ -3,6 +3,7 @@ import { deepPurple, green } from '@material-ui/core/colors';
 import List from "../employee/List";
 import axios from 'axios';
 import {useState} from "react";
+import Bars from "../employee/Bars";
 
 
 const useStyles = makeStyles ({
@@ -33,6 +34,8 @@ const Home = () => {
          [e.target.name]: e.target.value
         })
        }
+
+
 
        async function onFormSubmit(e) {
         e.preventDefault()
@@ -95,7 +98,12 @@ const Home = () => {
             <Grid item md={6} xs={12}>
                 <List/>
             </Grid>
+             
         </Grid>
+        <Grid >
+                <Bars/>
+            </Grid>
+       
     </>
   )
 }
